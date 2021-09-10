@@ -1,0 +1,237 @@
+{
+    "explorer.incrementalNaming": "smart", // 名前重複時の名前付け規則
+    "breadcrumbs.enabled": true, // パンくずリスト
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // サジェスト一覧の初期表示項目設定
+
+    //----------------------------------------------------------
+    // vscodeのeditor設定
+    //----------------------------------------------------------
+    "editor.copyWithSyntaxHighlighting": false, // テキストコピー時に書式設定を含める
+    "editor.dragAndDrop": false, // ドラッグアンドドロップで選択範囲のテキストを移動できるようにする
+    "editor.formatOnPaste": true, // 貼り付けを行ったときに自動でフォーマット
+    "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+    "editor.formatOnType": true, // 入力した行を自動でフォーマット
+    "editor.minimap.maxColumn": 60, // ミニマップの最大幅
+    "editor.minimap.showSlider": "always", // ミニマップのスライダーの表示方法
+    "editor.minimap.size": "fit", // ミニマップのサイズ
+    "editor.renderControlCharacters": true, // 制御文字を表示
+    "editor.renderWhitespace": "all", // エディター上での空白文字の表示方法
+    "editor.showFoldingControls": "always", // 行の折りたたみ記号の表示方法
+    "editor.tabSize": 2, // 1つのタブに相当する半角スペースの数
+    "editor.insertSpaces": true, // tab キーを押すとスペースが挿入
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）", // 単語の区切り文字
+    "editor.wordWrap": "on", // 行の折り返し表示
+    "editor.suggestSelection": "first", // サジェストの一覧の中のどの選択肢をあらかじめ選択させておくか
+    "editor.fontSize": 12.5, // fontSize
+    "editor.fontLigatures": false, // 合字（Ligature）機能を利用する
+
+    //----------------------------------------------------------
+    // vscodeの検索系
+    //----------------------------------------------------------
+    "search.showLineNumbers": true, // 検索ビューの検索結果に行数を併記
+    "search.exclude": { // 検索除外対象のディレクトリ
+        "**/bower_components": true,
+        "**/vendor": true,
+        "**/env": true,
+        "tags": true,
+        "**/.svn": true,
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+
+    //----------------------------------------------------------
+    // vscodeのfileの設定
+    //----------------------------------------------------------
+    "files.associations": { // 言語のサポート機能を有効化
+        "*.sql": "sql",
+    },
+    "files.autoGuessEncoding": false, // 有効な場合、ファイルを開くときに文字セット エンコードを推測します。言語ごとに構成することも可能
+    "files.insertFinalNewline": true, // ファイル保存時に行末に改行を挿入
+    "files.trimFinalNewlines": true, // ファイル保存時に最終行以降の空行を削除
+    "files.trimTrailingWhitespace": true, // ファイル保存時に各行の末尾にある半角スペースを削除
+    "files.autoSave": "onFocusChange",
+    "files.watcherExclude": { // ファイル監視から除外するファイル
+        "**/images/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.svn/**": true,
+    },
+
+    //----------------------------------------------------------
+    // vscodeのバージョン管理系
+    //----------------------------------------------------------
+    // ソース管理プロバイダーのセクションを常に表示するかどうか。
+    "scm.alwaysShowProviders": true,
+
+    //----------------------------------------------------------
+    // vscodeの作業環境の設定(おもにタブの設定をvimと近づけるために設定)
+    //----------------------------------------------------------
+    "workbench.editor.labelFormat": "short", // エディターのラベルの書式を制御
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showIcons": false, // 開いているエディターをアイコンで表示するかどうかを制御
+    "workbench.editor.highlightModifiedTabs": true, // 編集中のタブをハイライト
+    "workbench.editor.tabCloseButton": "off", // エディター タブの閉じるボタンの位置を制御するか、[off] に設定した場合に無効にします。
+    "workbench.editor.tabSizing": "shrink", // エディターのタブのサイズ
+    "workbench.startupEditor": "none", // 起動時に表示するエディター(e.g.readme/none)
+    "workbench.editor.openPositioning": "right", // エディターを開く場所を制御(e.g.left/right/first/last)
+    "workbench.activityBar.visible": true, // アクティビティバーの表示。よけいなスペースを取られるのでfalseにしたい。
+    "workbench.list.automaticKeyboardNavigation": false, // サイドバーのツリー検索でデフォルトの挙動をoffにする
+    "explorer.openEditors.visible": 0, // [開いているエディター] ウィンドウに表示するエディターの数。
+    "workbench.iconTheme": "material-icon-theme", // ファイルアイコンテーマ
+    "workbench.colorTheme": "GitHub Dark", // カラーテーマ
+    //----------------------------------------------------------
+    //ワンセット
+    "workbench.editor.showTabs": true, //タブで見えるようにしないと何が開いているのかわからない
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    // { "key": "cmd+w", "command": "workbench.action.closeeditorsingroup" }
+    // { "key": "ctrl+tab", "command": "workbench.action.openpreviouseditorfromhistory" },
+    // { "key": "ctrl+tab", "command": "workbench.action.quickopennavigatenext", "when": "inquickopen" },
+    //----------------------------------------------------------
+
+    //----------------------------------------------------------
+    // vscodeのdebugの設定
+    //----------------------------------------------------------
+    "debug.inlineValues": true, // デバッグ中に行内に変数値を表示
+    "debug.internalConsoleOptions": "openOnSessionStart", // デバッグコンソールの表示方法
+    "debug.openDebug": "openOnSessionStart", // デバッグビューの表示方法
+
+    //----------------------------------------------------------
+    // vscodeのwindowの設定
+    //----------------------------------------------------------
+    "window.zoomLevel": 0,
+
+    //----------------------------------------------------------
+    // vscodeのterminalの設定
+    //----------------------------------------------------------
+    "terminal.integrated.confirmOnExit": "always", // アクティブなターミナルセッションがある場合、終了時に確認を行う
+    "terminal.integrated.copyOnSelection": true, // ターミナルで選択したテキストをクリップボードにコピー
+    "terminal.integrated.fontSize": 12.5, // ターミナルのフォントサイズ
+
+    //----------------------------------------------------------
+    // vscode gitの設定
+    //----------------------------------------------------------
+    "git.autofetch": true,
+
+    //----------------------------------------------------------
+    // vscode javascriptの設定
+    //----------------------------------------------------------
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    //----------------------------------------------------------
+    // Plugin管理
+    //----------------------------------------------------------
+    // ## todohighlight
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": false,
+
+    //----------------------------------------------------------
+    // Vimの設定
+    //----------------------------------------------------------
+    "vim.insertModeKeyBindings": [ // jjでノーマルモードに切り替え
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.easymotion": true, // easymotionをONにする
+    "vim.easymotionKeys": "sdfghjkl", // ラベルで使う文字を決める
+    "vim.normalModeKeyBindingsNonRecursive": [ // ノーマルモードでfを押すとeasymotion発動
+        {
+            "before": [
+                "f"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        },
+        { // ---------------- deleteしたときにyankしない ----------------
+            "before": [
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "D"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "D"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "d"
+            ]
+        }, // // ---------------- deleteしたときにyankしない ----------------
+    ],
+    "vim.hlsearch": true, // 結果結果をハイライトする
+    "vim.incsearch": true, // 検索結果を全てハイライトする
+    "vim.useSystemClipboard": true, // システムのclipboardにコピー
+    "vim.visualstar": true, // カーソル上にあるワードを"*"で検索
+    "vim.useCtrlKeys": true, // 諸々のctrlキーを使った操作が有効になる
+    "vim.leader": "<space>", // スペースをleaderに設定
+    "vim.ignorecase": true, // 検索時に大小文字を区別しない
+    "vim.sneak": true, // vimのsnake pluginを使う（s + 2key で直近のwordに移動する）
+
+    "vim.visualModeKeyBindingsNonRecursive": [ // ビジュアルモードで連続ペーストする
+        {
+            "before": [
+                "p"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        }
+    ],
+    "vim.whichwrap": "h,l,<,>,[,],b,s", // 行をまたいで移動する
+
+    // "vim.handleKeys": {
+    //     "<C-a>": false,
+    //     "<C-f>": false
+    // },
+    // "vim.normalModeKeyBindingsNonRecursive": [
+    //     {
+    //         "before": [
+    //             "<leader>",
+    //             "d"
+    //         ],
+    //         "after": [
+    //             "d",
+    //             "d"
+    //         ]
+    //     },
+    //     {
+    //         "before": [
+    //             "<C-n>"
+    //         ],
+    //         "commands": [
+    //             ":nohl"
+    //         ]
+    //     }
+    // ],
+}
